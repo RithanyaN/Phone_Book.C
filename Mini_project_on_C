@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,i,age[10],pno[10],ch,no;
+    char name[50][500],add[50][50],dob[50][50];
+    printf("WELCOME TO PHONE BOOK\n\nMENU\n");
+    printf(">>Press 1 to add the contact to the phone book👉   ");
+    scanf("%d",&no);
+    if(no==1)
+    {
+    printf("Enter the number of contact to be added 👉   ");
+    scanf("%d",&n);
+    printf("                                       ------📞     ☎️    📳   📲  ------\n");
+    for(i=0;i<n;i++)
+    {
+        printf("Name : ");
+        scanf("%s",name[i]);
+        printf("Age : ");
+        scanf("%d",&age[i]);
+        printf("Phone No : ");
+        scanf("%d",&pno[i]);
+        printf("Date Of Birth : ");
+        scanf("%s",dob[i]);
+        printf("Address : ");
+        scanf("%s",add[i]);
+        printf("----------------------------------\n----------------------------------\n\n");
+        
+    }
+    }
+    printf(">>Press 1 see the entered contact\n");
+    printf(">>Press 0 to exit from the phone book\n");
+    printf("Enter 👉 ");
+    scanf("%d",&ch);
+    if(ch==1)
+    {
+        printf("The contacts in the PHONE BOOK 👇 \n\n");
+        for(i=0;i<n;i++)
+        {
+            printf("Name : %s\n",name[i]);
+            printf("Age : %d\n",age[i]);
+            printf("Phone No : %d\n",pno[i]);
+            printf("Date of Birth : %s\n",dob[i]);
+            printf("Address : %s\n",add[i]);
+            printf("----------------------------------\n");
+            
+        }
+    }
+    printf("                                  💛 Thanks for using Phone book 💛          ");             
+}
